@@ -1,0 +1,29 @@
+@use '../variables';
+
+.header {
+    max-width: 960px;
+    margin: 0 auto;
+    color: variables.$grey1;
+
+    &__container {
+        width: 100%;
+        text-align: center;
+
+        &__title {
+
+        }
+
+        &__image {
+            max-width: 100%;
+
+            img {
+                width: 260px;
+                border-radius: 150px;
+            }
+        }
+
+        &__timer {
+            font-size: 36px;
+        }
+    }
+}

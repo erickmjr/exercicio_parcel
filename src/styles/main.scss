@@ -1,2 +1,8 @@
 @use 'variables';
 @use 'reset';
+@use 'components/header';
+
+body {
+    padding: 3vh 3vh;
+    background-color: variables.$black;
+}
