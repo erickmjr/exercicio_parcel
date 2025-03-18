@@ -1,0 +1,14 @@
+@use '../variables';
+
+.footer {
+    font-size: 3vh;
+    padding: 1vw;
+    color: variables.$grey1;
+    background-color: variables.$wine1;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+        color: variables.$gold;
+    }
+}
