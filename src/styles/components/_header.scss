@@ -7,6 +7,12 @@
     margin: 5vh auto 0;
     color: variables.$grey1;
 
+    @media (max-width: 768px) {
+        height: 100%;
+        max-height: fit-content;
+        padding-bottom: 10vh;
+    }
+
 
     &__container {
         width: 100%;
@@ -14,6 +20,10 @@
 
         &__title {
             font-size: 66px;
+
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
         }
 
         &__image {
@@ -24,11 +34,15 @@
                 width: 400px;
                 border-radius: 26px;
                 box-shadow: 1px 1px 20px 1px variables.$black;
+
+                @media (max-width: 768px) {
+                    width: 360px;
+                }
             }
         }
 
         &__timer {
-            margin-top: 2.5vh;
+            margin-top: 6.5vh;
             background-color: rgba(variables.$black, .4);
             font-size: 54px;
             padding: 10px;
@@ -36,6 +50,10 @@
             width: fit-content;
             margin: 2vh auto 0;
             display: block;
+
+            @media (max-width: 768px) {
+                font-size: 36px;
+            }
 
             .timer__container {
                 display: flex;

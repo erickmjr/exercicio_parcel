@@ -12,24 +12,24 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <h1 class="header__container__title">You're invited to my birthday party</h1>
+            <h1 class="header__container__title">Você foi convidado para minha festa de aniversário!</h1>
             <div class="header__container__image">
                 <img src="./images/erick.jpg" alt="Érick">
             </div>
             <div class="header__container__timer">
-                Starts in 
+                Começa em:
                 <div class="timer__container">
-                    <div class="timer__container__item">
-                        72h
+                    <div class="timer__container__item" id="day">
+                        
                     </div>
-                    <div class="timer__container__item">
-                        23h
+                    <div class="timer__container__item" id="hour">
+                        
                     </div>
-                    <div class="timer__container__item">
-                        35min
+                    <div class="timer__container__item" id="min">
+                        
                     </div>
-                    <div class="timer__container__item">
-                        12s
+                    <div class="timer__container__item" id="sec">
+                        
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     <section class="party-infos">
         <div class="local">
             <h2 class="party-infos__title" data-aos="fade-right">Localização</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14696.105264854448!2d-43.164896910051255!3d-22.949257916213668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9980409039f845%3A0x8075d7bcdfbcb48c!2zUMOjbyBkZSBBw6fDumNhcg!5e0!3m2!1spt-BR!2sbr!4v1742257649507!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
+                <div class="iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14696.105264854448!2d-43.164896910051255!3d-22.949257916213668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9980409039f845%3A0x8075d7bcdfbcb48c!2zUMOjbyBkZSBBw6fDumNhcg!5e0!3m2!1spt-BR!2sbr!4v1742257649507!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe></div>
         </div>
 
         <span class="section-split"></span>
@@ -55,15 +55,20 @@
         <span class="section-split"></span>
 
         <div class="gifts">
-            <h2 class="party-infos__title" data-aos="fade-right">Presentes</h2>
+            <h2 class="party-infos__title" data-aos="fade-right">Ideias de presente</h2>
             <ul class="gifts__list" data-aos="fade-left">
-                <li class="gifts__list__item">Bola de futebol</li>
-                <li class="gifts__list__item">Camisa do Botafogo</li>
+                <li class="gifts__list__item">Entendendo Algoritmos</li>
+                <li class="gifts__list__item">Clean Code</li>
+                <li class="gifts__list__item">Morada do desertor</li>
                 <li class="gifts__list__item">Teclado Ajazz</li>
+                <li class="gifts__list__item">Monitor 144Hz</li>
             </ul>
         </div>
     </section>
 
+    <footer class="footer">
+        Desenvolvido por <a href="https://github.com/erickmjr" target="_blank">erickmjr</a>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
