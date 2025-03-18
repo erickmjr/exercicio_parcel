@@ -2,9 +2,11 @@
 @use 'reset';
 @use 'components/header';
 @use 'components/party-infos';
+@use 'components/footer';
 
 body {
     background-color: variables.$wine1;
+    overflow-x: hidden;
 }
 
 ul {
