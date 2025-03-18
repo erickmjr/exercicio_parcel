@@ -4,22 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Érick's birthday</title>
+    
+    <link rel="stylesheet" href="styles/main.scss">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <h1 class="header__container__title">You're invited to my birthday party</h1>
-            <div class="header__container__image"><img src="./images/erick.jpg" alt="Erick"></div>
+            <div class="header__container__image">
+                <img src="./images/erick.jpg" alt="Érick">
+            </div>
             <div class="header__container__timer">
-                Faltam <span id="timer">72d 6h 38min 22s</span> para o evento
+                Starts in 
+                <div class="timer__container">
+                    <div class="timer__container__item">
+                        72h
+                    </div>
+                    <div class="timer__container__item">
+                        23h
+                    </div>
+                    <div class="timer__container__item">
+                        35min
+                    </div>
+                    <div class="timer__container__item">
+                        12s
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
+    <section class="party-infos">
+        <div class="local">
+            <h2 class="party-infos__title" data-aos="fade-right">Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14696.105264854448!2d-43.164896910051255!3d-22.949257916213668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9980409039f845%3A0x8075d7bcdfbcb48c!2zUMOjbyBkZSBBw6fDumNhcg!5e0!3m2!1spt-BR!2sbr!4v1742257649507!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
+        </div>
+
+        <span class="section-split"></span>
+
+        <div class="dress-code">
+            <h2 class="party-infos__title" data-aos="fade-right">Dress-Code</h2>
+            <div class="dress-code__container" data-aos="fade-left">
+                <p>Esporte fino</p>
+                <img class="dress-code__container__image" src="images/dress-code.png" alt="Dress-Code">
+            </div>
+        </div>
+
+        <span class="section-split"></span>
+
+        <div class="gifts">
+            <h2 class="party-infos__title" data-aos="fade-right">Presentes</h2>
+            <ul class="gifts__list" data-aos="fade-left">
+                <li class="gifts__list__item">Bola de futebol</li>
+                <li class="gifts__list__item">Camisa do Botafogo</li>
+                <li class="gifts__list__item">Teclado Ajazz</li>
+            </ul>
+        </div>
+    </section>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

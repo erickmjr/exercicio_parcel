@@ -2,28 +2,45 @@
 
 .header {
     max-width: 960px;
-    margin: 0 auto;
+    height: 100vh;
+    max-height: 75%;
+    margin: 5vh auto 0;
     color: variables.$grey1;
+
 
     &__container {
         width: 100%;
         text-align: center;
 
         &__title {
-
+            font-size: 66px;
         }
 
         &__image {
             max-width: 100%;
+            margin-top: 2vh;
 
             img {
-                width: 260px;
-                border-radius: 150px;
+                width: 400px;
+                border-radius: 26px;
+                box-shadow: 1px 1px 20px 1px variables.$black;
             }
         }
 
         &__timer {
-            font-size: 36px;
+            margin-top: 2.5vh;
+            background-color: rgba(variables.$black, .4);
+            font-size: 54px;
+            padding: 10px;
+            border-radius: 12px;
+            width: fit-content;
+            margin: 2vh auto 0;
+            display: block;
+
+            .timer__container {
+                display: flex;
+                gap: 12px;
+            }
         }
     }
 }

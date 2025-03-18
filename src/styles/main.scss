@@ -1,8 +1,21 @@
 @use 'variables';
 @use 'reset';
 @use 'components/header';
+@use 'components/party-infos';
 
 body {
-    padding: 3vh 3vh;
-    background-color: variables.$black;
+    background-color: variables.$wine1;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-split {
+    display: block;
+    max-width: 90vw;
+    width: 100%;
+    background-color: rgba(variables.$grey1, .6);
+    height: 2px;
+    margin: 0 auto;
 }

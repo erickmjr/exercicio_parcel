@@ -1,0 +1,57 @@
+@use '../variables';
+
+.party-infos {
+
+    background-color: variables.$black;
+    padding: 5vh 0;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        margin: 5vh 0;
+        padding: 0 10vw;
+
+        iframe {
+            border-radius: 30px;
+        }
+    }
+
+    &__title {
+        color: variables.$gold;
+        font-size: 60px;
+        text-align: left;
+    }
+
+    .dress-code {
+
+        &__container {
+            width: fit-content;
+            display: block;
+            padding: 0;
+
+            p {
+                color: variables.$grey1;
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+            img  {
+                width: 350px;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .gifts{
+
+        &__list {
+
+            &__item {
+                color: variables.$gold;
+                font-size: 24px;
+            }
+        }
+    }
+}
